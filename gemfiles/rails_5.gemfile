@@ -4,15 +4,16 @@ source "https://rubygems.org"
 
 ruby "2.3.1"
 
-gem "administrate-field-image"
-gem "bourbon", "~> 4.2"
+gem "administrate-field-image", :github => "pedrocarmona/administrate-field-image"
 gem "delayed_job_active_record"
 gem "high_voltage"
 gem "markdown-rails"
 gem "pg"
 gem "redcarpet"
 gem "unicorn"
-gem "sass", "3.4.0"
+gem "rails", "5.0.0.rc1", "< 5.1"
+gem "rspec-rails", "~> 3.5.0.beta1"
+gem "kaminari", :github => "amatsuda/kaminari", :branch => "0-17-stable"
 
 group :development do
   gem "web-console", ">= 2.1.3"
